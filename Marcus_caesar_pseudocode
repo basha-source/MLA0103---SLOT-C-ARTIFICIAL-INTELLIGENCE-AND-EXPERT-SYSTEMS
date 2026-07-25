@@ -1,0 +1,38 @@
+START
+
+1. Store the following facts:
+   - Marcus is a man.
+   - Marcus is a Pompeian.
+   - Caesar is a ruler.
+   - Marcus tried to assassinate Caesar.
+
+2. Define the rules:
+   - If a person is a Pompeian, then the person is a Roman.
+   - If a person is a man, then the person is a person.
+   - Every person is loyal to someone.
+   - If a person tries to assassinate a ruler, then the person is not loyal to that ruler.
+   - If a Roman is not loyal to Caesar, then the Roman hates Caesar.
+   - If a Roman does not hate Caesar, then the Roman is loyal to Caesar.
+
+3. Read the user's query.
+
+4. If the query is:
+      "Is Marcus loyal to Caesar?"
+      Check whether Marcus hates Caesar.
+      If Marcus hates Caesar,
+         Display "False"
+      Else
+         Display "True"
+
+5. If the query is:
+      "Does Marcus hate Caesar?"
+      Check whether:
+         Marcus is a Roman
+         AND
+         Marcus is not loyal to Caesar.
+      If both conditions are true,
+         Display "True"
+      Else
+         Display "False"
+
+STOP
