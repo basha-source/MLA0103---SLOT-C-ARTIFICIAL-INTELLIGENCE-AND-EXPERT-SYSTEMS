@@ -1,0 +1,24 @@
+Algorithm: Greedy Best-First Search
+
+Start
+
+1. Define the heuristic function (Manhattan Distance).
+2. Create an empty priority queue (OPEN list).
+3. Create an empty CLOSED list (visited nodes).
+4. Insert the start node into the OPEN list with its heuristic value.
+5. Repeat until the OPEN list is empty:
+      a. Remove the node with the smallest heuristic value.
+      b. If the current node is the goal:
+            i. Reconstruct the path by following parent nodes.
+            ii. Return the path.
+      c. Add the current node to the CLOSED list.
+      d. For each valid neighboring node (up, down, left, right):
+            i. Ignore if it is an obstacle or already visited.
+            ii. Calculate the heuristic value.
+            iii. Create a new node with the current node as its parent.
+            iv. If the node is not already in the OPEN list with a better heuristic,
+                add it to the OPEN list.
+6. If the OPEN list becomes empty and the goal is not found,
+      Display "No path found."
+
+Stop
