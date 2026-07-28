@@ -1,0 +1,15 @@
+Algorithm: Forward Chaining
+
+Start
+
+1. Initialize the known facts.
+2. Initialize the set of rules.
+3. Repeat
+      a. Select a rule whose condition is satisfied.
+      b. If the conclusion is not already a known fact,
+            i. Add the conclusion to the facts.
+            ii. Display the newly derived fact.
+4. Continue until no new facts can be derived.
+5. Display all final facts.
+
+Stop
