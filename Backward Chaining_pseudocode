@@ -1,0 +1,18 @@
+Algorithm: Backward Chaining
+
+Start
+
+1. Set the goal to be proved.
+2. Check whether the goal is already a known fact.
+3. If the goal is a fact,
+      Display "Goal Achieved".
+4. Otherwise,
+      a. Find a rule whose conclusion matches the goal.
+      b. Treat the rule's conditions as new sub-goals.
+      c. Repeat the process for each sub-goal.
+5. If all sub-goals are proved,
+      Display "Goal Achieved".
+6. Otherwise,
+      Display "Goal Failed".
+
+Stop
